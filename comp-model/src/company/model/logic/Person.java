@@ -39,7 +39,7 @@ public class Person {
 		super();
 		this.nume = nume;
 		this.adress = adress;
-		CNP = CNP;
+		CNP = cNP;
 
 	}
 
