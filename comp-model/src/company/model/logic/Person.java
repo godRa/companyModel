@@ -1,45 +1,52 @@
 package company.model.logic;
 
 public class Person {
-	
+
 	private String nume;
 	private String adress;
-	private String  CNP;
+	private String CNP;
 
 	public String getNume() {
 		return nume;
 	}
+
 	public void setNume(String nume) {
 		this.nume = nume;
 	}
+
 	public String getAdress() {
 		return adress;
 	}
+
 	public void setAdress(String adress) {
 		this.adress = adress;
 	}
+
 	public String getCNP() {
 		return CNP;
 	}
+
 	public void setCNP(String cNP) {
 		CNP = cNP;
 	}
-	
+
 	@Override
 	public String toString() {
-		return "Person [nume=" + nume + ", adress=" + adress + ", CNP=" + CNP +  "]";
+		return "Person [nume=" + nume + ", adress=" + adress + ", CNP=" + CNP + "]";
 	}
+
 	public Person(String nume, String adress, String cNP, int vechime, int salar) {
 		super();
 		this.nume = nume;
 		this.adress = adress;
-		CNP = cNP;
-	
+		CNP = CNP;
+
 	}
-	
-	public Person () {
-		
+
+	public Person() {
+
 	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -49,6 +56,7 @@ public class Person {
 		result = prime * result + ((nume == null) ? 0 : nume.hashCode());
 		return result;
 	}
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -75,8 +83,5 @@ public class Person {
 			return false;
 		return true;
 	}
-	
-	
-	
 
 }
