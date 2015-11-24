@@ -6,6 +6,7 @@ public class Company {
 
 	public String name;
 	public Employee[] employees;
+	public Client client;
 
 	public Employee[] getEmployees() {
 		return employees;
@@ -22,6 +23,13 @@ public class Company {
 	public void setName(String name) {
 		this.name = name;
 	}
-	
-	
+
+	public Client getClient() {
+		return client;
+	}
+
+	public void setClient(Client client) {
+		this.client = client;
+	}
+
 }
